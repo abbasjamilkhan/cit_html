@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average</title>
+    <style>
+        h1{
+            margin-left: 20px;
+        }
+        input{
+            width: 30%;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        button{
+            margin-top: 10px;
+            margin-left: 100px;
+            padding: 6px;
+            width: 90px;
+            background: rgb(175, 228, 122);
+            color:white rgb(175, 228, 122) ;
+            border: 1px solid ;
+            border-radius: 5px;
+        }
+        .result-1{
+            height: 50px;
+            width: 30%;
+            border:solid black ;
+            margin-top: 10px;
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>total marks is <b><i>700</i></b></h1>
+    <input type="number" id="marks" placeholder="enter your marks" required>
+    
+    <div id="result" class="result-1">
+        
+
+    </div>
+    <button onclick="khan()">result</button>
+</body>
+</html>
+<script type="text/javascript">
+function khan(){
+    var x=document.getElementById("marks").value;
+    var z=(x*100)/700;
+    document.getElementById("result").innerHTML=z;
+}
+
+</script>

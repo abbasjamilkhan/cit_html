@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/bootsrap.bundle.min.js"></script>
+    <title>css practise</title> 
+    <style type="text/css">
+        input[type=text] , select {
+            width: 100%;
+             padding: 12px 20px; 
+            margin: 12px 0px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #4caf50;
+            padding: 12px 6px;
+            color: white;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: rgb(30, 175, 211)
+        }
+    </style>
+</head>
+<body>
+    <h1>using css to style an html form</h1>
+    <div>
+        <form action="/action page.php"></form> 
+        <label for="first name">first name</label>
+        <input type="text" id="first name" name="first name" placeholder="your name">
+
+         <label for="last name">last name</label>
+         <input type="text" id="last name" name="last name" placeholder="last name">
+
+         <label for="image">your image</label>
+         <input type="file">
+         <br>
+         <label for="country">country</label>
+         <select name="country" id="country">
+             <option value="0">select</option>
+             <option value="astralia">astralia</option>
+             <option value="canada">canada</option>
+             <option value="pakistan">pakistan</option>
+             <option value="turkey">turkey</option>
+             <input type="submit" value="submit">
+             <button type="reset">reset</button>
+
+
+         </select>
+    </div>
+</body>
+</html>
